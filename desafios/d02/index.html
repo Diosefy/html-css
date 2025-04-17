@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Responsividade de Imagens em HTML5 puro!</h1>
+    <p>Segue abaixo a imagem que, dependendo do estilo de tela que estiver, ela aumenta ou diminui.</p>
+
+    <picture>
+
+        <source media="(max-width: 1035px)" srcset="imagens/paisagem-p.png" type="image/jpg">
+
+        <source media="(max-width: 1250px)" srcset="imagens/paisagem-m.png" type="image/jpg">
+
+        <img src="imagens/paisagem-g.jpg" alt="paisagem grande">
+    </picture>
+</body>
+</html>
